@@ -95,6 +95,15 @@ while run:
     #tagging if statement
     if pygame.Rect.colliderect(taggerrect, runnerrect):
         startvariable = False
+    if runnerrect.x<1: runnerrect.x = 1279
+    if runnerrect.x>1279: runnerrect.x = 1
+    if runnerrect.y<1: runnerrect.y = 719
+    if runnerrect.y>719: runnerrect.y = 1
+    if taggerrect.x<1: taggerrect.x = 1279
+    if taggerrect.x>1279: taggerrect.x = 1
+    if taggerrect.y<1: taggerrect.y = 719
+    if taggerrect.y>719: taggerrect.y = 1
+
             
     #flipping the code
     pygame.display.flip()
